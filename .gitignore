@@ -20,7 +20,9 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
-[Ll]og/
+# [Ll]og/
+# The last line has commented because we have a lot of useful log directories.
+# If necessary, you can declare explicit log directories here.
 
 # Visual Studio 2015 cache/options directory
 .vs/
@@ -69,6 +71,9 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+
+# but keep track of directories ending in .log
+!*.[Ll]og/
 
 # Chutzpah Test files
 _Chutzpah*
